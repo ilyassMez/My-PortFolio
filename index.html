@@ -21,7 +21,11 @@
     <header>
       <nav class="container">
         <a href="#" class="logo"><img src="./img/logo.png" alt="logo" /></a>
-        <div class="links">
+        <div id="links" class="links">
+          <span onclick="Open_close_menu()" class="close_menu"
+            ><i class="fa-solid fa-xmark"></i
+          ></span>
+          <a href="#home" class="logo"><img src="./img/logo.png" alt="" /></a>
           <a class="active" href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
@@ -32,6 +36,9 @@
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
+          <span onclick="Open_close_menu()" href="#" class="icon_menu"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
         </div>
       </nav>
     </header>
@@ -236,24 +243,37 @@
               target="_blank"
               ><i class="fab fa-linkedin-in"></i>Ilyass Div</a
             >
-            <a href="https://github.com/IlyassMezouar" target="_blank"
+            <a href="https://github.com/ilyassMez" target="_blank"
               ><i class="fab fa-github"></i>Ilyass Div</a
             >
           </div>
         </div>
-        <form action="">
+        <form
+          method="post"
+          action="https://api.sheetmonkey.io/form/5xq7qDHkkwQQWqCPiwv2dQ"
+        >
           <div class="inputs_form">
-            <input type="text" placeholder="Full Name" required />
-            <input type="email" placeholder=" Email" required />
-            <input type="text" placeholder="Mobile Number" required />
-            <input type="text" placeholder="Subject" required />
+            <input
+              type="text"
+              placeholder="Full Name"
+              required
+              name="Full Name"
+            />
+            <input type="email" placeholder=" Email" required name="Email" />
+            <input
+              type="text"
+              placeholder="Mobile Number"
+              required
+              name="Mobile Number"
+            />
+            <input type="text" placeholder="Subject" required name="Subject" />
             <textarea
               rows="10"
               placeholder=" Your Message here ..."
               required
             ></textarea>
           </div>
-          <button class="btn">Send Message</button>
+          <button type="submit" class="btn">Send Message</button>
         </form>
       </div>
     </section>
